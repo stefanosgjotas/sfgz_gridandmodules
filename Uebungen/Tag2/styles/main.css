@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(255, 0, 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 6rem;
+  line-height: 1.1;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.raster {
+  display: grid;
+  /* grid-template-rows: 200px; */
+  /* grid-template-columns: 200px 200px 200px 200px 200px; */
+  grid-template-columns: repeat(5 1fr);
+  grid-gap: 15px;
+  width: 200px;
+  grid-auto-flow: row;
+  margin: auto;
+}
+
+.raster div {
+  color: black;
+  border: 1px dotted white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*https://www.w3schools.com/css/css3_mediaqueries.asp */
+@media screen and (max-width: 48em){
+ body{
+  background-color: black;
+   }
+  .raster div {
+    color: green;
+  }
+  .raster .P{
+    grid-area: 1 / 1;
+  }
+  .raster .L{
+    grid-area: 3 / 1;
+  }
+}
