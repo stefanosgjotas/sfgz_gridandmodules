@@ -94,7 +94,7 @@ section {
   border-color: black;
   border-style: inset;
   border-width: 15px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .ground:hover{
@@ -104,9 +104,8 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 1;
   transition: all 1s ease;
-  z-index: 2;
+  z-index: 1;
 }
 
 .eyes:hover{
@@ -118,7 +117,7 @@ section {
   width: 98vw;
   height: 48vh;
   transition: all 2s ease;
-  z-index: 2;
+  z-index: 1;
 }
 
 .yellow {
