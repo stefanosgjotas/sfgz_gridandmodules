@@ -1,0 +1,132 @@
+body {
+  font-family: 'Monoton', cursive;
+  font-size: 5rem;
+  background-color: black;
+  }
+
+  section {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .wrapper {
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+
+.life {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 99%;
+  transition: all 2s ease;
+  line-height: 4rem;
+  padding-top: 50vh;
+  width: 100vw;
+  height: 50vh;
+  color: grey;
+  text-align: center;
+  z-index: 0;
+}
+
+.fantasy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 99%;
+  background-image: radial-gradient(circle at bottom center, rgb(84, 13, 239),rgb(79, 34, 84));
+  opacity: 0;
+  transition: all 2s ease;
+  line-height: 4rem;
+  padding-top: 49vh;
+  width: 98vw;
+  height: 48vh;
+  color: purple;
+  font-size: 5rem;
+  text-align: center;
+  filter: blur(5px);
+  border-radius: 100px;
+  border-color: black;
+  border-style: inset;
+  border-width: 15px;
+  z-index: 1;
+}
+
+.fantasy:hover{
+  color: yellow;
+  opacity: 1;
+  filter: blur(0px);
+  font-size: 5rem;
+  transition: all 3s ease;
+  z-index: 1;
+}
+
+
+.caught {
+  position: absolute;
+  transition: all 2s ease;
+  line-height: 5rem;
+  padding-top: 49vh;
+  width: 98vw;
+  height: 48vh;
+  color: yellow;
+  text-align: center;
+  z-index: 1;
+}
+
+.eyes {
+  position: absolute;
+  opacity: 0;
+  transition: all 2s ease;
+  line-height: 5rem;
+  padding-top: 48vh;
+  width: 98vw;
+  height: 48vh;
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  filter: blur(5px);
+  border-radius: 100px;
+  border-color: black;
+  border-style: inset;
+  border-width: 15px;
+  z-index: 2;
+}
+
+.ground:hover{
+  background-image: url("freddie.jpg");
+  background-color: white;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  transition: all 1s ease;
+  z-index: 2;
+}
+
+.eyes:hover{
+  color: white;
+  opacity: 1;
+  filter: blur(0px);
+  font-size: 5rem;
+  padding-top: 48vh;
+  width: 98vw;
+  height: 48vh;
+  transition: all 2s ease;
+  z-index: 2;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.grey {
+  color: grey;
+}
