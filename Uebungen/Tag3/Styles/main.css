@@ -99,7 +99,7 @@ section {
 
 .ground:hover{
   background-image: url("freddie.jpg");
-  background-color: white;
+  background-color: #fc222a;
   height: auto;
   background-position: center;
   background-repeat: no-repeat;
