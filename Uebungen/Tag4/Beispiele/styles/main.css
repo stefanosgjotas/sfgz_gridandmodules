@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Monoton', sans-serif;
+  font-size: 5rem;
+  background-color: black;
+}
+
+section {
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+
+    .raster div {
+        font-size: calc(100vh / 5);
+        line-height:100%;
+        color:white;
+        text-transform: uppercase;
+        position:relative;
+        opacity: .3;
+
+
+    }
+    .raster {
+        width: 100vw;
+        height: 100vh;
+        overflow:hidden;
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 50vw 50vw;
+        justify-content: space-between;
+        align-items: start;
+
+        /*writing-mode: vertical-lr;*/
+    }
+
+    .animation_left{
+        animation-name: bewegen_left;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        text-shadow: 0 0 20px #FFFFFF, 0 0 20px #FFFFFF;
+        z-index: 0;
+
+    }
+
+    .animation_right{
+        animation-name: bewegen_right;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        text-shadow: 0 0 20px #FFFFFF, 0 0 20px #FFFFFF;
+        z-index: 0;
+
+
+    }
+
+    @keyframes bewegen_left {
+        0% {
+            transform: translate(0px, 0px);
+
+
+        }
+        50% {
+            transform: translate(-25vw, 0);
+
+
+
+        }
+        100% {
+            transform: translate(-50vw, 0);
+
+        }
+    }
+    @keyframes bewegen_right {
+        0% {
+            transform: translate(0px, 0px);
+
+
+        }
+        50% {
+            transform: translate(25vw, 0);
+
+
+
+        }
+        100% {
+            transform: translate(50vw, 0);
+
+        }
+    }
+
+
+    .magic {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      transition: all 1s ease;
+      padding-top: 20vh;
+      width: 90vw;
+      height: 50vh;
+      text-align: center;
+      z-index: 1;
+    }
+
+.fingerlos {
+      padding-top: 470px;
+    }
+
+.hand {
+          padding-top: 514px;
+          padding-left: 160px;
+        }
+
+
+    .animation_left_magic {
+        animation-name: bewegen_left_magic;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: linear;
+
+    }
+
+    .animation_right_magic {
+        animation-name: bewegen_right_magic;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: linear;
+
+    }
+
+  }
+
+.front {
+    z-index: 1;
+  }
+
+.behind {
+  z-index: -1;
+}
+
+
+  @keyframes bewegen_left_magic {
+      0% {
+          transform: translate(-8vw, 0px);
+
+
+      }
+      50% {
+          transform: translate(-5vw, 0);
+
+
+
+      }
+      100% {
+          transform: translate(-2vw, 0);
+
+      }
+  }
+  @keyframes bewegen_right_magic {
+      0% {
+          transform: translate(10vw, 0px);
+
+
+      }
+      50% {
+          transform: translate(8vw, 0);
+
+
+
+      }
+      100% {
+          transform: translate(2vw, 0);
+
+      }
+  }
