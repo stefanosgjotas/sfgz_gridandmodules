@@ -118,12 +118,14 @@ section {
     }
 
 .fingerlos {
+      position: absolute;
       padding-top: 470px;
     }
 
 .hand {
-          padding-top: 514px;
-          padding-left: 160px;
+      position: absolute;
+      padding-top: 514px;
+      padding-left: 160px;
         }
 
 

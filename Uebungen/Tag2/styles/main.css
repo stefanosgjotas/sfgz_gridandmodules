@@ -1,5 +1,7 @@
 body {
-  background-color: rgb(255, 0, 0);
+  background-image: url("unsplash1.jpg");
+  background-size: 100vw;
+  background-color: rgb(51, 49, 51);
   font-family: Helvetica, Arial, sans-serif;
   font-size: 6rem;
   line-height: 1.1;
@@ -21,8 +23,10 @@ body {
 }
 
 .raster div {
-  color: black;
+  color: white;
   border: 1px dotted white;
+  background-color: firebrick;
+  opacity: 0.7;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,10 +35,14 @@ body {
 /*https://www.w3schools.com/css/css3_mediaqueries.asp */
 @media screen and (max-width: 48em){
  body{
-  background-color: black;
+   background-image: url("unsplash2.jpg");
+   background-size: cover;
+   background-color: rgb(51, 49, 51);
    }
   .raster div {
-    color: green;
+    color: white;
+    opacity: 0.7;
+    background-color: seagreen;
   }
   .raster .P{
     grid-area: 1 / 1;
