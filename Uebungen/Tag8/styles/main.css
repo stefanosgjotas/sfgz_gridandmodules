@@ -9,9 +9,9 @@ body {
   text-align: center;
   color: white;
   background-color: black;
-  height: 100vh;
+  /* height: 100vh;
   width: 100vw;
-  max-width: 100vw;
+  max-width: 100vw; */
   overflow-x: hidden;
   margin: 0;
   padding: 0;
