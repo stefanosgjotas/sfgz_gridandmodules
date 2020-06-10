@@ -587,7 +587,7 @@ body {
 }
 
 .isinview.slide-left {
-	        animation: slide-left 10s linear infinite both;
+	        animation: slide-left 10s linear 1s infinite both;
 }
 
 @keyframes slide-left {
