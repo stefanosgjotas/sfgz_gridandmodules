@@ -43,9 +43,27 @@ document.addEventListener( 'DOMContentLoaded', () => {
             {
                 if (IsInView(elements[i])) {
                     elements[i].classList.add(inviewclass)
+
+                    //custom für detectscroll
+                    if(elements[i].getAttribute('id') == "detectscroll"){
+                        let viewtop= elements[i].getBoundingClientRect().top
+                        if(viewtop < 0){
+                            //console.log('ich bin über der animation')
+                            document.getElementById("background").style.display = 'none';
+                            document.getElementById("background").style.webkitAnimationPlayState = "paused";
+                        }else{
+                            document.getElementById("background").style.display = 'block';
+                            document.getElementById("background").style.webkitAnimationPlayState = "running";
+                        }
+                    }
+
+
+
                 }else{
                     elements[i].classList.remove(inviewclass)
                 }
+
+
             }
     } )
 
